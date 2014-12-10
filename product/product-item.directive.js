@@ -22,6 +22,7 @@
 	function link(scope, element, attrs){
 		element.bind('click', function(){
 			element.attr('clicked', true);
+			scope.updateClicked(scope);
 		})
 	}
 

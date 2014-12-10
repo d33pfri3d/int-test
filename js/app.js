@@ -3,7 +3,8 @@
 
 	var app = angular.module('app', [
 		'app.data',
-		'app.listCtrl'
+		'app.listCtrl',
+		'app.localstorage'
 	]);
 
 

@@ -19,9 +19,11 @@
 <div ng-cloak>
 	
 
-	<div class="product-grid">
+	<div class="product-grid" ng-controller="ListCtrl">
+
+	<button ng-click="setCurrentCategory()">Clear Filter</button>
 		
-		<ul ng-controller="ListCtrl">
+		<ul>
 			
 			<li ng-repeat="product in products | filter:{category:currentCategory}">
 				<product-item></product-item>

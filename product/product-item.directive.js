@@ -13,14 +13,9 @@
 		var directive = {
 			restrict: 'E',
 			replace: true,
-			templateUrl: 'product/item.tmpl.html',
-			controller: ItemCtrl
+			templateUrl: 'product/item.tmpl.html'
 		};
 		return directive
-	};
-
-	function ItemCtrl($scope){
-		
 	};
 
 })();

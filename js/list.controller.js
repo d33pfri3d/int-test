@@ -7,6 +7,12 @@
 
 	function ListCtrl($scope, TempData){
 		$scope.products = TempData.products;
+
+		function setCurrentCategory(category){
+			$scope.currentCategory = category;
+		}
+
+		$scope.setCurrentCategory = setCurrentCategory;
 	}
 
 	
